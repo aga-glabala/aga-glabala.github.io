@@ -1,41 +1,48 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="home">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    
-    <div class="row">
-      <div class="small-12 columns">
-        <div class="panel">
-          <h1>Cześć,</h1>
-          <p>jestem Aga i na tej stronie prawie nic nie ma :)</p>
+    <div background></div>
+    <div class="container">
+        <div class="medium-text-left small-text-center medium-grid-block hello-panel">
+          <img class="medium-grid-block shrink hello-panel--face" src="img/Agnieszka%20Świecznik.png">
+          <h1 class="grid-block hello-panel--text">Hi, I'm Aga Świecznik, front-end developer from Łódź. This is sandbox for some of my projects.</h1>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="small-12 columns">
-        <h2>
-          Czy Twoja strona jest dostępna dla wszystkich użytkowników?
-          <small>Prezentacja na Geek Girls Carrots</small>
-        </h2>
-        <p>
-          Prezentacja o dostępności stron internetowych, na co zwrócić szczególną uwagę, jak niepełnosprawni korzystają
-            ze stron i jak testować dostępność.
-        </p>
-        <a class="button" href="web accessibility/index.html" title="Czy Twoja strona jest dostępna dla wszystkich użytkowników?">Przejdź do prezentacji</a>
-      </div>
+        <div ui-view></div>
     </div>
+    <footer>
+        lslsl
+    </footer>
     
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="bower_components/foundation-apps/js/angular/services/foundation.core.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/services/foundation.dynamicRouting.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/services/foundation.dynamicRouting.animations.js"></script>
+
+    <script src="bower_components/foundation-apps/js/angular/components/accordion/accordion.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/actionsheet/actionsheet.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/common/common.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/iconic/iconic.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/interchange/interchange.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/modal/modal.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/notification/notification.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/offcanvas/offcanvas.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/panel/panel.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/popup/popup.js"></script>
+    <script src="bower_components/foundation-apps/js/angular/components/tabs/tabs.js"></script>
+
+    <script src="bower_components/foundation-apps/js/angular/foundation.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+    <script src="js/background.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
