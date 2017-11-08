@@ -25,20 +25,31 @@
 
 .reveal {
     font-family: 'Roboto';
-    text-shadow: 0 0 7px #000;
+    color: rgb(91, 97, 104);
 }
 .reveal .state-background {
-    background-image: url('../img/10.png');
+    background-image: url('../img/bg.jpg');
     background-size: cover;
+}
+
+.reveal h1 {
+  line-height: 1.3;
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     font-family: 'Roboto';
     font-weight: 100;
-    text-shadow: 0 0 10px #000;
+  color: #1c1e20;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .reveal h2 {
-    font-size: 3em;
+    font-size: 2em;
+    margin: 0 0 50px 0;
+}
+
+.reveal h3 {
+  font-size: 1.5em ;
+  margin: 70px 0 40px;
 }
 
 .reveal .highcharts-container {
@@ -60,4 +71,13 @@
 .reveal a:not(.image) {
     color: white;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.reveal .with-picture img {
+  float: right;
+  width: 45%;
+}
+
+.reveal .with-picture ul {
+  width: 50%;
 }
